@@ -1,11 +1,12 @@
-﻿//Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
-
+﻿//Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 {
+    Console.WriteLine("Введите размер массива");
+    int size = Convert.ToInt32(Console.ReadLine());
+    Random rnd = new Random();
+    int[] mas = new int[size];        
+            
 
-            int size = Convert.ToInt32(Console.ReadLine());
-            Random rnd = new Random();
-
-            int[] mas = new int[size];
+            
             
             for(int i = 0; i < size; i++)
             {
@@ -25,8 +26,7 @@
             {
                 Console.Write(mas[i]+ " ");
             }
-            Console.WriteLine(count);
+            Console.WriteLine($"всего {size} чисел, {count} из них чётные");
 
-            Console.ReadKey(true);
-}
-    
+            
+        }
