@@ -5,10 +5,8 @@
     Random rnd = new Random();
     int[] mas = new int[size];        
             
-
             
-            
-            for(int i = 0; i < size; i++)
+             for(int i = 0; i < size; i++)
             {
                 mas[i] = rnd.Next(100, 999);
             }
